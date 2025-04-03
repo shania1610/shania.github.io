@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dist/css/lightgallery.min.css" />
+    <script src="dist/js/lightgallery-all.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/AboutMe.css">
+    <script src="Script/AboutMeScript.js"></script>
+    <title>About Me</title>
+</head>
+<body>
+
+
+    <nav>
+        <a href="Index.html">Home Page</a>
+        <a href="About Me.html">About Me</a>
+        <a href="Portfolio">Portfolio</a>
+        <a href="Contact">Contact</a>
+    </nav>
+
+
+    <ul id="lightGallery" class="gallery">
+
+        <li data-title="Pisa" data-desc="Pisa, a city in Tuscany, Italy, is renowned for its iconic Leaning Tower, an architectural marvel that attracts millions of visitors each year. In addition to its famous tower, Pisa boasts a rich history, vibrant culture, and beautiful medieval buildings, making it a popular destination for travelers." data-responsive-src="Images/Pisa.jpg"
+            data-src="Images/Pisa.jpg"> <a href="#"> <img src="Images/Pisa.jpg" /> </a> </li>
+
+        <li data-title="London" data-desc="London is a vibrant metropolis known for its rich history, iconic landmarks like the Tower of London and Buckingham Palace, and a diverse cultural scene. The city seamlessly blends tradition with modernity, offering an array of museums, theaters, and culinary experiences from around the world." data-responsive-src="Images/London.jpg"
+            data-src="Images/London.jpg"> <a href="#"> <img src="Images/London.jpg" /> </a> </li>
+
+        <li data-title="Job" data-desc="Software development is the process of designing, writing, testing, and maintaining code that enables applications and systems to function effectively. It involves collaboration among various stakeholders, including developers, designers, and project managers, to create software that meets user needs and adheres to quality standards." data-responsive-src="Images/code.jpg"
+            data-src="Images/code.jpg"> <a href="#"> <img src="Images/Code.jpg" /> </a> </li>
+
+        <li data-title="Amalfi" data-desc="The Amalfi Coast, a stunning stretch of coastline in southern Italy, is renowned for its dramatic cliffs, picturesque villages, and crystal-clear waters. Visitors flock to this UNESCO World Heritage site to explore charming towns like Positano and Amalfi, savor delicious Mediterranean cuisine, and bask in the breathtaking views." data-responsive-src="Images/Amalfi.jpg"
+            data-src="Images/Amalfi.jpg"> <a href="#"> <img src="Images/Amalfi.jpg" /> </a> </li>
+
+        <li data-title="Paris" data-desc="Paris, often referred to as the City of Light, is renowned for its stunning architecture, including the iconic Eiffel Tower and the historic Notre-Dame Cathedral. The citys vibrant culture, world-class museums like the Louvre, and charming streets make it a top destination for travelers seeking art, cuisine, and romance." data-responsive-src="Images/Paris.jpg"
+            data-src="Images/Paris.jpg"> <a href="#"> <img src="Images/Paris.jpg" /> </a> </li>
+
+        <li data-title="Family" data-desc="Family is often considered a fundamental support system, providing love, guidance, and a sense of belonging. It fosters connections that can endure through life's challenges, helping individuals grow and thrive together." data-responsive-src="Images/Family.jpg"
+            data-src="Images/Family.jpg"> <a href="#"> <img src="Images/Family.jpg" /> </a> </li>
+
+    </ul>
+    <script>
+        $(document).ready(function () {
+
+            $("#lightGallery").lightGallery();
+        });
+    </script>
+
+    <script>
+        const facts = [
+            "I once climbed a mountain!"
+        ];
+
+        $(document).ready(function() {
+            $('#surprise-button').click(function() {
+                const randomFact = facts[Math.floor(Math.random() * facts.length)];
+                $('#fact-display').text(randomFact);
+            });
+        });
+    </script>
+    
+    <p>
+        Welcome to my personal homepage! Its a pleasure to meet you here. My name is Ivy Rose, and Im an 18-year-old
+        aspiring software developer residing on the enchanting island of Malta, a place where history intertwines with
+        the vibrant energy of modern life. Malta, with its stunning landscapes and rich cultural heritage, has always
+        been a source of inspiration for me, fueling my creativity and ambition as I navigate my educational pursuits
+        and future aspirations.
+        <br><br>
+
+        Currently, I am delving into the exciting world of iGaming at the Malta College of Arts, Science and Technology
+        (MCAST). Here, I am honing my skills and expanding my knowledge in a field that perfectly marries my two
+        greatest passions: technology and gaming. This unique intersection offers endless opportunities for innovation,
+        and Im thrilled to be part of an industry that is as dynamic and groundbreaking as iGaming. From developing
+        engaging user interfaces to implementing complex algorithms, every aspect of software development excites me, as
+        it allows me to combine problem-solving with creativity.
+        <br><br>
+
+        As I embark on this journey, I am not only focused on building my technical skills but also on understanding the
+        broader implications of technology in our daily lives. I believe that technology should serve a purpose beyond
+        mere functionality; it should enhance our experiences and address real-world problems. With this conviction, I
+        am inspired to create games and applications that bring joy and connect people, regardless of their background
+        or geographical location.
+        <br><br>
+
+        Beyond my studies, I have a burning desire to travel the world. I dream of exploring diverse cultures, meeting
+        new people, and absorbing different perspectives that will invariably enrich my personal and professional life.
+        Each journey holds a unique story, and I firmly believe that stepping outside our comfort zones not only
+        broadens our horizons but also deepens our understanding of the human experience. In my travels, I hope to
+        gather stories and insights that will influence my work as a developer, allowing me to craft software solutions
+        that resonate on a global scale.
+        <br><br>
+
+        Living life to the fullest is my mantra. I seek adventure in every corner of life, be it in the thrill of
+        exploring new destinations, the excitement of learning new technologies, or the simple joys of spending time
+        with loved ones. I am an advocate for balance, cherishing moments of laughter and connection as much as moments
+        of focused work. Surrounding myself with supportive and passionate individuals is crucial to me, as I believe
+        that inspiration often comes from collaboration and shared experiences.
+        <br><br>
+
+        Looking towards the future, I envision a career where I not only thrive as a successful software developer but
+        also contribute positively to the ever-evolving tech landscape. I aspire to create innovative solutions that
+        truly make a difference in people's lives, whether through enhancing the gaming experience or developing tools
+        that help individuals navigate daily challenges more efficiently. My ultimate goal is to cultivate a life that
+        merges professional success with personal happiness, fostering relationships that bring joy and satisfaction.
+        <br><br>
+
+        Thank you for taking the time to get to know me a little better! I genuinely appreciate your interest in my
+        journey, and I am excited to share my experiences, insights, and the milestones I reach along the way. Together,
+        lets explore the boundless possibilities of technology and creativity!
+    </p>
+
+    <h1> Surprise Me!</h1>
+
+    <div class="container">
+       
+        <button id="surprise button">Get a Fun Fact</button>
+        <p id="fact-display"></p>
+     </div>
+
+     
+</body>
+
+</html>
